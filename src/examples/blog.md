@@ -89,6 +89,17 @@ We can approach this problem in a very traditional way:
 1. Make the tests pass
 1. Create a functional interface that wires the endpoints
 
+## Define our model
+
+In order to define our model we need to edit the file `./app/config/resources.php`
+
+## Define our endpoints
+
+## Write some tests
+
+## Make the tests pass
+
+Create a functional interface that wires the endpoints
 Final product
 
 Base install

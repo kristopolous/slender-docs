@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the Slender documentation. Slender is at it's core, a CMS and API.
+Welcome to the Slender documentation. Slender is at its core, a CMS and API.
 
 ## Getting Started
 

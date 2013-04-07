@@ -48,22 +48,29 @@ Since installation can have lots of snags for some and may be painless for other
 <blockquote>
 There are two prompts used:
 
-* "host$" refer to commands that are to be run outside of the virtual-machine, on your regular shell.
+* "host:$" refer to commands that are to be run outside of the virtual-machine, on your regular shell.
 * "vagrant@slender-api:" refer to commands that should be run INSIDE of the virtual-machine. 
 
 To get inside the virtual machine, do the following:
 
 <pre>
-host$ cd slender-api
-host$ vagrant up
+host:~$ cd slender-api
+host:slender-api/$ vagrant up
 ...
-host$ vagrant ssh
+host:slender-api/$ vagrant ssh
 Last login: Sun Apr  7 03:02:22 2013 from 10.0.2.2
 vagrant@slender-api:~$ 
 </pre>
 </blockquote>
 
 ## Set up slender-api
+
+We will do the following:
+
+1. Clone slender-api
+1. Start a vagrant instance for the slender-api
+1. Run the unit tests
+
 Step 1. Clone slender-api 
 <pre class="">
 host:~$ git clone git://github.com/dwsla/slender-api.git
@@ -83,10 +90,6 @@ host:slender-api/$ vagrant up
 [default] -- 22 => 2222 (adapter 1)
 [default] -- 80 => 4003 (adapter 1)
 [default] -- 27017 => 27019 (adapter 1)
-[default] Creating shared folders metadata...
-[default] Clearing any previously set network interfaces...
-[default] Booting VM...
-[default] Waiting for VM to boot. This can take a few minutes.
 ...
 [2013-04-05T02:27:46+00:00] INFO: Chef Run complete in 90.334180485 seconds
 [2013-04-05T02:27:46+00:00] INFO: Running report handlers
@@ -109,7 +112,6 @@ VirtualBox Version: 4.1.12
 </pre>
 </aside>
 
-Step 3. Test slender-api
 <pre>
 host:slender-api/$ cat Vagrantfile
 ...
@@ -125,6 +127,25 @@ OK%
 host:slender-api/$ 
 </pre>
 
+Step 3. Run the unit tests
+To test slender-api, we need to make sure that phpunit is installed correctly. 
+
+Go into the virtual box and make sure it is installed:
+
+<pre>
+host$ vagrant ssh
+Last login: Sun Apr  7 03:02:22 2013 from 10.0.2.2
+vagrant@slender-api:~$ cd /vagrant
+vagrant@slender-api:/vagrant$ php composer.phar update --dev
+...
+vagrant@slender-api:/vagrant$ ./phpunit
+...
+vagrant@slender-api:/vagrant$ 
+</pre>
+
+
+
+
 <pre>
 host:slender-api/$ chmod o+w app/storage/meta
 </pre>
@@ -134,3 +155,23 @@ Step 1. Clone slender-cms
 <pre>
 host:~$ git clone git://github.com/dwsla/slender-cms.git
 </pre>
+
+Step 2. Start up vagrant for slender-cms
+(~20 minutes)
+<pre>
+host:~$ cd slender-cms
+host:slender-cms/$ vagrant up
+[default] Importing base box 'centos-6.3-i386'...
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] -- 80 => 4003 (adapter 1)
+[default] -- 27017 => 27019 (adapter 1)
+...
+[2013-04-05T02:27:46+00:00] INFO: Chef Run complete in 90.334180485 seconds
+[2013-04-05T02:27:46+00:00] INFO: Running report handlers
+[2013-04-05T02:27:46+00:00] INFO: Report handlers complete
+host:slender-api/$ 
+</pre>
+
