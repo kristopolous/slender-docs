@@ -9,7 +9,7 @@ Welcome to the Slender documentation. Slender is at its core, a CMS and API.
 Why is there yet another CMS and how are things going to be done right this time?
 
 ### [Installation](installation.html)
-This will help guide you to a base-level install
+This will help guide you to a base-level install.
 
 ### A Troubleshooting Guide 
 This has many problems that can arise during any step along with diagnosis on what is causing the problem and ways to address it.

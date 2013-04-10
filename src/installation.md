@@ -27,7 +27,7 @@ The following guide will use
 
 We also recommend:
 
- * a linux system. This tutorial is being written on an Ubuntu 12.04.02 LTS system.  
+ * a Linux system. This tutorial is being written on an Ubuntu 12.04.02 LTS system.  
  * multiple Gigabytes of RAM on the host system 
  * at least an Intel i5 or equivalent processor to make things run smoothly.
  * a high-speed internet connection (around 1GB is downloaded for the base system including the VM).
