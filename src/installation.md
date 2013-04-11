@@ -97,6 +97,18 @@ host:slender-api/$ vagrant up
 host:slender-api/$ 
 </pre>
 
+Step 2a. Install and run composer
+(~10 minutes)
+<pre>
+vagrant@slender-api:/vagrant$ curl -sS https://getcomposer.org/installer | php
+...
+vagrant@slender-api:/vagrant$ php composer.phar install 
+...
+vagrant@slender-api:/vagrant$ logout
+...
+host:slender-api/$ chmod o+w ./app/storage/meta
+</pre>
+
 <aside class="troubleshoot">
 ### Some things you may see:
 

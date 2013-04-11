@@ -1,6 +1,56 @@
 # What is Slender?
 
-Let's talk about building websites.
+Let's talk about building websites and start out with some slogan:
+
+> Make Easy things Easy and Hard Things Possible.
+
+First, the easy things.
+
+## CRUD applications
+
+Software as a Service is an old buzzword and RESTful CRUD is nothing new.
+
+These are great ideas that sound like they would make your life easier, but most implementations have steep learning curves; being detached, elaborative, and too inventive.
+
+So how is Yet Another IPC of the web-browser going to make your life easier?
+
+Let's start off with the easy ones:
+
+#### Create is an HTTP/PUT or POST
+#### Read is an HTTP/GET
+#### Update is an HTTP/PUT or POST
+#### Delete is an HTTP/DELETE
+
+See, that's not overly semantic. We didn't get into theoretics about the difference between the idempotence of PUT versus POST, because; let's make Easy things Easy.
+
+### More complex things (very) possible.
+
+Let's say we have a table of users.
+
+Each user has say an `age, gender, firstname, lastname, password, email-address, last-login`
+
+I want to get all the people that logged in during the last 24 hours and sort those people by age, ascending.
+
+ok, 
+
+    GET /users?where[]=last-login:gte:Date(Now()-(24*60*60))&order=age:asc
+
+That *almost* reads like SQL. In fact, Slender supports the most common SQL slicing and dicing techniques.  You can put these in Javascript, or you can put them in your CMS code, or you can put them in an intermediate caching layer.  All with almost an identical ease.
+
+Want to find out more? Check out how to do this by 
+
+ 1. Creating models in JSON (with support for ActiveRecord style relations such as hasOne and hasMany)
+ 2. Creating end-points with a few key-strokes.
+ 3. Writing tests for these from sensible templates.
+ 4. Using the general syntax to get the information you need.
+
+This is how we've tried to keep easy things easy.  
+
+There's a whole different dimension however. We've also tried to make difficult (intractible) things possible.
+
+## The whole enchilada.
+
+Let's focus again on building websites.
 
 You've probably noticed that you get fairly similar clients with fairly similar needs.
 
