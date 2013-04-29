@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+html {
+  background: #efeeff;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  margin: 1em;
+}
+
+body{
+  width:700px;
+  display:inline-block;
+  vertical-align:top
+}
+img{display:block;margin:5px;padding:3px}
+#content li{line-height:1.75em;margin-top:.5em;max-width:420px}
+#content li p{width:100%}
+q{width:450px;margin:10px;display:block;line-height:1.65em;background:#fff;padding:15px;font-size:0.9em}
+q p{margin:1em 0.5em;width:95%}
+q:before{content:""}
+q:after{content:""}
+cite a{color:#99c}
+label{font-family:monospace;width:450px;margin:0px 5px 15px;display:block;line-height:1.35em;background:#fff;padding:1em}
+p{line-height:1.75em;width:80%;font-size:1em}
+tt{display:block;margin:10px;font-weight:bold}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #246;
+  font-weight: bold;
+}
+h1{width:auto;margin:30px -15px 10px}
+h2{margin-bottom:0}
+h3{font-size:1.5em}
+h4{font-size:1.25em;margin-top:1em}
+h5{font-size:1.1em;font-weight:bold}
+h6{font-size:1em;margin:10px 0 -15px}
+
+code span{display:block;margin:0;padding:0}
+code.grey{color:#777;background:#eee}
+pre.error{background:#ecc;font-weight:bold;border:0;padding:10px}
+pre.normal{width:auto;display:inline-block;white-space:pre;background:#cec;display:block;padding:10px;margin:10px;width:400px;margin-bottom:20px;line-height:1.35em}
+.emp{color:#000;background:#cec}
+.copy{color:#aaa;font-size:0.9em;display:block;text-align:center}
+.secret{color:silver;font-weight:bold}
+.secret a{color:lightblue}
+.secret a:visited{color:pink}
+.header{position:absolute;top:0;left:0;background:#ddd;display:block;width:100%;padding:5px 0;text-indent:5px}
+.header a{color:#555;font-weight:bold}
+.pre * {font-family:monospace}
+
+nav{display:inline-block;position:absolute;right:0;top:0px;width:20em;
+  border-bottom:0.5em solid #246;
+  border-left:0.5em solid #246}
+nav h4{margin:0;font-size:1.5em;text-align:right;background:#246;color:#ffe;font-weight:100;padding:1em}
+nav h4 a{display:block;color:#acf;font-size:0.8em}
+nav-contents {margin:0;padding:0;font-size:0.9em}
+nav li{color:#246;list-style:none;padding:1em;margin:0.5em;cursor:pointer}
+nav h5{font-weight:bold;display:block;font-size:1.2em;color:inherit;margin-bottom:.5em}
+nav a{text-decoration:none;color:inherit;cursor:inherit}
+nav li:hover{color:#ffe;background:#246}
+nav li.selected{border-left:2px solid #246;cursor:default}
+
+.syntaxhighlighter{font-size:0.8em !important}
+a img{float:left;margin-left:-35px}
+.break{display:block;margin:3em 0 1em 0;margin-left:220px}
+cite{text-align:right;margin:5px -5px -10px 0;display:block;font-weight:bold;color:#bbb;font-family:Palatino Linotype,Book Antiqua,Palatino,serif}
+em{padding:0 10px;margin:18px 5px; display:block;width:475px;font-size:0.9em;border-left: 2px solid #ddF}
+em b{display:block}
+th{text-align:left}
+#toc{margin-top:0.5em}
+#toc a{display:inline-block;background:tan;width:23%;padding:1.75%;border:2px solid tan;margin:1%;text-align:center;font-size:1.15em;text-decoration:none;color:#246}
+#toc a:hover{background:#246;color:tan}
+
+h1 { 
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0.5em 0;
+}

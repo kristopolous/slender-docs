@@ -1,5 +1,13 @@
 # What is Slender?
 
+Slender focuses on data first:
+
+1. Data is modeled
+2. APIs are decided on
+3. The interface stems from the first two.
+
+## Introduction
+
 Let's talk about building websites and start out with some slogan:
 
 > Make Easy things Easy and Hard Things Possible.

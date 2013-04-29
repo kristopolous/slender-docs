@@ -14,6 +14,7 @@ This will help guide you to a base-level install.
 ### A Troubleshooting Guide 
 This has many problems that can arise during any step along with diagnosis on what is causing the problem and ways to address it.
 
+<!--
 ## Examples
 There are two site examples:
 
@@ -24,6 +25,7 @@ The quintessential todomvc, created with slender.
 ### [A Blog](examples/blog.html)
 
 The standard blog, with comments; long regarded as the hello-world of solutions in the same class as Slender.
+-->
 
 ## References
 There's also more referential style tools available:
