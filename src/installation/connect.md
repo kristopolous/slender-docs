@@ -5,3 +5,11 @@
 This tutorial presumes that you have the [API](api.html) and the [CMS](cms.html) set up in their own respective virtual machines. If you don't, you should do that before proceeding.
 
 Since the API and the CMS run on separate virtual machines you must configure them to talk to each other.
+
+## Troubleshooting
+
+<span>
+**Message**: Failed to connect to: 127.0.0.1:27017: Transport endpoint is not connected
+
+**Diagnosis:** The forwarded port in the api isn't right. Look in the VagrantFile of the API and make sure that the `config.vm.forward_port 28017,XXXX` port matches the one TODO
+</span>

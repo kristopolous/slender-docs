@@ -33,3 +33,13 @@ host:slender-cms/$ vagrant up
 [2013-04-05T02:27:46+00:00] INFO: Report handlers complete
 host:slender-api/$ 
 </pre>
+
+## Troubleshooting
+
+<span>
+**Message**: Warning: SessionHandler::read(): open(/vagrant/app/config/../storage/sessions/sess_..., O_RDWR) failed: Permission denied (13) in /vagrant/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Session/Storage/Proxy/SessionHandlerProxy.php line 69 
+
+**Diagnosis**: There are some permission errors that can be resolved by moving the session storage off the vagrant mounted disk.
+
+Edit `/vagrant/app/config/session.php` and change the `files` key to have a value such a `/tmp/`.
+</span>
