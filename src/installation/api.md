@@ -5,6 +5,7 @@ This tutorial will guide you through the following steps:
 1. Cloning the `slender-api`.
 1. Starting a vagrant instance for the slender-api.
 1. Configuring various [dependencies](../dependencies.html).
+1. Determining your environment.
 1. Running the unit tests.
 1. Writing your own unit tests.
 1. Extending the API
@@ -59,6 +60,14 @@ vagrant@slender-api:/vagrant$ logout
 ...
 host:slender-api/$ chmod o+w ./app/storage/meta
 </pre>
+<aside class="tip">
+### Make the auth-key human-readable.
+
+TODO
+
+`db.users.update({"key":<key>}, {$set:{"key":"slender"}})`
+
+</aside>
 
 <aside class="troubleshoot">
 ### Some things you may see:
@@ -89,6 +98,25 @@ host:slender-api/$ curl http://localhost:4003/
 OK%                                             
 host:slender-api/$ 
 </pre>
+
+### Determining your environment.
+
+Slender supports different environments.  These are outlined in `bootstrap/start.php` and inferred from the `$_SERVER` host variables.
+
+There are separate configuration files for each `$env`. For local, for instance, there is a file at `app/config/local/databases.php`.
+
+Inside this file you will see an array of depth 2.  The second depth of the array corresponds to the API http path.
+
+For instance, if there were the following values:
+
+  'somesite' => array(
+    'host' => '127.0.0.1',
+    'port' => 27017,
+    'database' => 'slender_somesite'
+  )
+
+Then you can make calls to that api via `http://hostname:port/somesite/slug`.
+
 
 Step 3. Run the unit tests
 To test slender-api, we need to make sure that phpunit is installed correctly. 
