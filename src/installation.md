@@ -104,6 +104,15 @@ vagrant@slender-api:/vagrant$ curl -sS https://getcomposer.org/installer | php
 ...
 vagrant@slender-api:/vagrant$ php composer.phar install 
 ...
+vagrant@slender-api:/vagrant$ php artisan add-admin-user --env=local
+(enter in information here)
+...
+*---------------------------------------------------------------------------*
+
+User has been successfully created!
+Your Auth Key is: <record this>
+
+*---------------------------------------------------------------------------*
 vagrant@slender-api:/vagrant$ logout
 ...
 host:slender-api/$ chmod o+w ./app/storage/meta
@@ -187,3 +196,6 @@ host:slender-cms/$ vagrant up
 host:slender-api/$ 
 </pre>
 
+## Connect the API to the CMS
+
+Since the API and the CMS run on separate virtual machines you must configure them to talk to each other.
