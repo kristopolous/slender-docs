@@ -1,12 +1,9 @@
 # Installation
-## Introduction
 
 Slender is broken up into two parts:
 
  * slender-api: A "back-end" api
  * slender-cms: A "front-end" cms
-
-Getting up and running hassle-free.
 
 ## Target Audience
 
@@ -18,7 +15,7 @@ You should be comfortable with the following before continuing:
 
 ## What you need
 
-The following guide will use 
+The following guides will use 
 
  * [git](http://git-scm.com/) - The popular RCS tool. (The repos used also support [SVN](https://github.com/blog/626-announcing-svn-support));
  * [vagrant](http://www.vagrantup.com) - a tool that works with virtual-box to virtualize development environments, keeping your host install clean. (highly recommended).
@@ -62,7 +59,6 @@ Last login: Sun Apr  7 03:02:22 2013 from 10.0.2.2
 vagrant@slender-api:~$ 
 </pre>
 </blockquote>
-
 
 There are three separate documents:
 
