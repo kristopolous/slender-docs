@@ -13,3 +13,4 @@ Slender leverages the following technologies:
  * zendframework
  * symfony
  * doctrine
+ * jquery-uploader
