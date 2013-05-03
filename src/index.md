@@ -1,6 +1,9 @@
 # Introduction
 
-Welcome to the Slender documentation. Slender is at its core, a CMS and API.
+Slender helps you build web-applications centered around and based off of a data model.
+
+It is an extensible CMS and API built in PHP.
+
 
 ## Getting Started
 
@@ -8,7 +11,7 @@ Welcome to the Slender documentation. Slender is at its core, a CMS and API.
 
 Why is there yet another CMS and how are things going to be done right this time?
 
-### [Installation](installation.html)
+### [Installation](installation/)
 This will help guide you to a base-level install.
 
 ### A Troubleshooting Guide 

@@ -1,4 +1,4 @@
-## Set up slender-cms
+# Set up slender-cms
 
 This tutorial will guide you through the following steps:
 

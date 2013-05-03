@@ -1,4 +1,4 @@
-## Set up slender-api
+# Set up slender-api
 
 This tutorial will guide you through the following steps:
 
