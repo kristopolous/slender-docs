@@ -65,7 +65,14 @@ host:slender-api/$ chmod o+w ./app/storage/meta
 
 TODO
 
-`db.users.update({"key":<key>}, {$set:{"key":"slender"}})`
+<pre>
+vagrant@slender-api:/vagrant$ mongo
+> show dbs
+> db.users.update({"key":<key>}, {$set:{"key":"slender"}})
+> ^D
+bye
+vagrant@slender-api:/vagrant$ 
+</pre>
 
 </aside>
 
