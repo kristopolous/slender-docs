@@ -19,3 +19,7 @@ Make sure that the `host` and `auth` values match up to the value that was creat
 
 **Diagnosis:** The forwarded port in the api isn't right. Look in the VagrantFile of the API and make sure that the `config.vm.forward_port 28017,XXXX` port matches the one.
 </span>
+
+
+TODO: Edit the hosts connection for app/config/packages/dws/api-gateway/auth.php app/config/packages/dws/api-gateway/gateway.php app/config/packages/dws/slender-cms/api.php
+ 

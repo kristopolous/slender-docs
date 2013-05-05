@@ -10,7 +10,7 @@ html {
 
 body{
   padding: 0.5em 1.5em;
-  width:700px;
+  width:800px;
   box-shadow: 
   0.15em 0.2em 0.1em 0.1em rgba(31,65,60,0.6),
   inset 0.1em -0.1em 0.0em 0.1em rgba(91,65,60,0.3);
@@ -28,7 +28,7 @@ q:before{content:""}
 q:after{content:""}
 cite a{color:#99c}
 label{font-family:monospace;width:450px;margin:0px 5px 15px;display:block;line-height:1.35em;background:#fff;padding:1em}
-p{line-height:1.75em;font-size:1em;margin:0.25em 0;}
+p{line-height:1.75em;font-size:1em;margin:0.25em 0.5em 0.25em 0;}
 tt{display:block;margin:10px;font-weight:bold}
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,10 +42,19 @@ h4{font-size:1.25em;margin-top:1em}
 h5{font-size:1.1em;font-weight:bold}
 h6{font-size:2em;display:inline-block;}
 
+code { 
+  background: #222;
+  color: #eee;
+  font-size: 0.85em;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+}
+
+pre {
+  font-size: 0.85em;
+}
 code span{display:block;margin:0;padding:0}
 code.grey{color:#777;background:#eee}
-pre.error{background:#ecc;font-weight:bold;border:0;padding:10px}
-pre.normal{width:auto;display:inline-block;white-space:pre;background:#cec;display:block;padding:10px;margin:10px;width:400px;margin-bottom:20px;line-height:1.35em}
 .emp{color:#000;background:#cec}
 .copy{color:#aaa;font-size:0.9em;display:block;text-align:center}
 .secret{color:silver;font-weight:bold}
