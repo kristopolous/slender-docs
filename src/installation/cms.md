@@ -17,7 +17,7 @@ host:~$ git clone git://github.com/dwsla/slender-cms.git
 
 Step 2. Start up vagrant for slender-cms
 (~20 minutes)
-<pre>
+<pre class="brush: shell">
 host:~$ cd slender-cms
 host:slender-cms/$ vagrant up
 [default] Importing base box 'centos-6.3-i386'...
@@ -47,7 +47,7 @@ vagrant@slender-cms:/vagrant$
 <aside>
 You may need to increase composer's patience by running a command such as
 
-<pre>
+<pre class="brush: shell">
 vagrant@slender-cms:/vagrant$ php composer.phar config process-timeout 3000
 </pre>
 
