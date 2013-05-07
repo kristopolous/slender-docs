@@ -31,8 +31,30 @@ host:slender-cms/$ vagrant up
 [2013-04-05T02:27:46+00:00] INFO: Chef Run complete in 90.334180485 seconds
 [2013-04-05T02:27:46+00:00] INFO: Running report handlers
 [2013-04-05T02:27:46+00:00] INFO: Report handlers complete
-host:slender-api/$ 
+host:slender-cms/$ 
 </pre>
+
+Install composer (see the [dependencies](../../dependencies.html) for more information).
+
+<pre>
+vagrant@slender-cms:/vagrant$ curl -sS https://getcomposer.org/installer | php
+...
+vagrant@slender-cms:/vagrant$ php composer.phar install
+...
+vagrant@slender-cms:/vagrant$ 
+</pre>
+
+<aside>
+You may need to increase composer's patience by running a command such as
+
+<pre>
+vagrant@slender-cms:/vagrant$ php composer.phar config process-timeout 3000
+</pre>
+
+</aside>
+
+Install Laravel packages
+
 
 ## Troubleshooting
 
