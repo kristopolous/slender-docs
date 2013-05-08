@@ -11,13 +11,14 @@ Refer to the [connect](connect.html) section for details on how to get the CMS a
 -----
 
 Step 1. Clone slender-cms
-<pre>
+```bash
 host:~$ git clone git://github.com/dwsla/slender-cms.git
-</pre>
+```
 
 Step 2. Start up vagrant for slender-cms
 (~20 minutes)
-<pre class="brush: shell">
+
+```bash
 host:~$ cd slender-cms
 host:slender-cms/$ vagrant up
 [default] Importing base box 'centos-6.3-i386'...
@@ -32,24 +33,25 @@ host:slender-cms/$ vagrant up
 [2013-04-05T02:27:46+00:00] INFO: Running report handlers
 [2013-04-05T02:27:46+00:00] INFO: Report handlers complete
 host:slender-cms/$ 
-</pre>
+```
 
 Install composer (see the [dependencies](../../dependencies.html) for more information).
 
-<pre>
+```bash
 vagrant@slender-cms:/vagrant$ curl -sS https://getcomposer.org/installer | php
 ...
 vagrant@slender-cms:/vagrant$ php composer.phar install
 ...
 vagrant@slender-cms:/vagrant$ 
-</pre>
+```
 
 <aside>
 You may need to increase composer's patience by running a command such as
 
-<pre class="brush: shell">
-vagrant@slender-cms:/vagrant$ php composer.phar config process-timeout 3000
-</pre>
+```bash
+vagrant@slender-cms:/vagrant$ 
+php composer.phar config process-timeout 3000
+```
 
 </aside>
 
@@ -63,5 +65,5 @@ Install Laravel packages
 
 **Diagnosis**: There are some permission errors that can be resolved by moving the session storage off the vagrant mounted disk.
 
-Edit `/vagrant/app/config/session.php` and change the `files` key to have a value such a `/tmp/`.
+Edit `/vagrant/app/config/session.php` and change the `files` key to have a value such as `/tmp/`.
 </span>

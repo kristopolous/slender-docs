@@ -13,5 +13,5 @@ for i in `find . -type f -name "*.md" `; do
     -B $pw/porcelain/before-body.html\
     $i > ../output/${i/md/html}
 done
-cp ../porcelain/*css ../output
+cp -r ../porcelain/assets ../output
 echo "done"

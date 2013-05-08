@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
 @import url(http://fonts.googleapis.com/css?family=Medula+One);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import url(ir_black.css);
+
+code, pre {
+  font-family: 'Droid Sans Mono', monospace;
+}
 
 html {
   background:rgba(21,125,30,0.1);
@@ -53,6 +59,7 @@ h5{font-size:1.1em;font-weight:bold}
 h6{font-size:2em;display:inline-block;}
 
 code { 
+  white-space: pre;
   background: #222;
   color: #eee;
   font-size: 0.85em;
@@ -63,8 +70,6 @@ code {
 pre {
   font-size: 0.85em;
 }
-code span{display:block;margin:0;padding:0}
-code.grey{color:#777;background:#eee}
 .emp{color:#000;background:#cec}
 .copy{color:#aaa;font-size:0.9em;display:block;text-align:center}
 .secret{color:silver;font-weight:bold}

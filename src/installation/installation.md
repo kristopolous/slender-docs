@@ -53,14 +53,15 @@ There are two prompts used:
 
 To get inside the virtual machine, do the following:
 
-<pre>
+```bash
 host:~$ cd slender-api
 host:slender-api/$ vagrant up
 ...
 host:slender-api/$ vagrant ssh
 Last login: Sun Apr  7 03:02:22 2013 from 10.0.2.2
 vagrant@slender-api:~$ 
-</pre>
+```
+
 </blockquote>
 
 ## Set up slender-api
