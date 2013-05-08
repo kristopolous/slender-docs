@@ -12,5 +12,11 @@ xdebug.remote_host=10.0.2.2
 xdebug.remote_port=9000
 ```
 
+Remember to restart apache after you add these!
+
+```
+vagrant@slender-cms:$ sudo apachectl restart
+```
+
 netbeans
 
