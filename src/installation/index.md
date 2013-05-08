@@ -45,8 +45,8 @@ Since installation can have lots of snags for some and may be painless for other
 <blockquote>
 There are two prompts used:
 
-* "host:$" refer to commands that are to be run outside of the virtual-machine, on your regular shell.
-* "vagrant@slender-api:" refer to commands that should be run INSIDE of the virtual-machine. 
+* `host:$` refer to commands that are to be run outside of the virtual-machine, on your regular shell.
+* `vagrant@slender-api:` and `vagrant@slender-cms:` refer to commands that should be run INSIDE of the virtual-machine of the API or the CMS respectively. 
 
 To get inside the virtual machine, do the following:
 

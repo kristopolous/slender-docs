@@ -14,7 +14,7 @@ aside {
   float: right;
   margin-right: -25em;
   padding: 1em;
- background:rgba(11,95,10,0.25);
+  background:rgba(11,95,10,0.25);
   border:1px solid #aaa;
   box-shadow: 2px 2px 2px rgba(200,200,200,0.5);
 }
@@ -62,7 +62,6 @@ code {
 
 pre {
   font-size: 0.85em;
-  white-space: normal;
 }
 code span{display:block;margin:0;padding:0}
 code.grey{color:#777;background:#eee}
