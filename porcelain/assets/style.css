@@ -58,12 +58,18 @@ h4{font-size:1.25em;margin-top:1em}
 h5{font-size:1.1em;font-weight:bold}
 h6{font-size:2em;display:inline-block;}
 
+.trouble span {
+  display: block;
+  border-bottom: 2px solid rgba(11, 28, 55, 0.95);
+  margin-bottom: 1em;
+}
+ 
 code { 
-  white-space: pre;
   background: #222;
   color: #eee;
   font-size: 0.85em;
   padding: 0.15em 0.5em;
+  line-height: 1.3em;
   border-radius: 3px;
 }
 

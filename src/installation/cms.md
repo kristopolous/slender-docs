@@ -60,10 +60,28 @@ Install Laravel packages
 
 ## Troubleshooting
 
-<span>
-**Message**: Warning: SessionHandler::read(): open(/vagrant/app/config/../storage/sessions/sess_..., O_RDWR) failed: Permission denied (13) in /vagrant/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Session/Storage/Proxy/SessionHandlerProxy.php line 69 
+<div class="trouble"><span>
+**Message**: 
+
+`
+Warning: SessionHandler::read(): open(/vagrant/app/config/../storage/sessions/sess_..., O_RDWR) failed: Permission denied (13) in /vagrant/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Session/Storage/Proxy/SessionHandlerProxy.php line 69 
+`
+
 
 **Diagnosis**: There are some permission errors that can be resolved by moving the session storage off the vagrant mounted disk.
 
 Edit `/vagrant/app/config/session.php` and change the `files` key to have a value such as `/tmp/`.
 </span>
+
+<span>
+
+**Message**: 
+
+`
+file_put_contents(/vagrant/app/config/../storage/meta/services.json) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: Permission denied 
+`
+
+**Diagnosis**: This is similar to the previous problem. Edit `/vagrant/app/config/app.php` and change the `manifest` key to have a value such as `/tmp/` that is off the vagrant mount of the host system.
+</span>
+
+</div>
